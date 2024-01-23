@@ -1,0 +1,19 @@
+.ithernet{
+    background: url("../../img/backgrounds/zitata.jpg") center (center / cover) no-repeat;
+    height: auto;
+    padding: 70px 0;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__text{
+            font-size: 24px;
+            color: #fff;
+            font-weight: 600;
+            margin-top: 10px;
+            span{
+                color: $main-color;
+            }
+        }
+    }
+}

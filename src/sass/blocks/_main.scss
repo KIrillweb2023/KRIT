@@ -1,0 +1,47 @@
+.main{
+    background: url("../../img/backgrounds/main-bg.jpg") center (center / cover) no-repeat;
+    height: 100vh;
+    padding-top: 250px;
+    .title{
+        text-align: center;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        font-size: 18px;
+        font-weight: 700;   
+        &::before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: -10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: $main-color;
+            z-index: -1;
+        }
+    }
+    .subtitle{
+        text-align: center;
+        color: #fff;
+        span{
+            color: $main-color;
+        }
+        margin-top: 50px;
+    }
+    .description{
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .scroling{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%);
+        cursor: pointer;
+    }
+}

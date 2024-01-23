@@ -1,0 +1,35 @@
+body{
+    transition: 0.5s all;
+    $main-color: #5061FF;
+    &.active{
+        animation: themes 0.3s all;
+        .main{
+            .title{
+                &::before{ background: $main-color; }
+            }
+            .subtitle{ span{ color: $main-color; }}
+        }
+        .header{
+            &__wrapper{
+                &__theme{
+                    border: 3px solid $main-color; 
+                    &_res{
+                        &.active{
+                            background-color: $main-color; 
+                            right: 5px;
+                        }
+                       
+                    }
+                }
+                &__nav{
+                    &_link{
+                        &:hover{
+                            border-bottom: 3px solid $main-color;
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

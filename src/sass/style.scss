@@ -1,0 +1,84 @@
+@import "./variable/variable";
+@import "./font/font";
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/wireles";
+@import "./blocks/types";
+@import "./blocks/ither";
+@import "./blocks/frame";
+@import "./blocks/people";
+@import "./blocks/stage";
+@import "./blocks/footer";
+@import "./theme/theme";
+
+.close{
+    position: absolute;
+    right: -54px;
+    top: 8px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ham{
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Gilroy", sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1200px){
+    .container{
+        width: 970px;
+    }
+}
+@media (max-width: 992px){
+    .container{
+        width: 750px;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 567px){
+
+}
+
+@keyframes themes {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@import "./media/media";
